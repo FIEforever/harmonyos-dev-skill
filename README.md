@@ -55,7 +55,8 @@ harmonyos-dev-skill/
 │   ├── harmonyos-apis.md             # HarmonyOS API 12 完整参考
 │   ├── graphics.md                   # 图形系统专项（6大Kit）
 │   └── deveco-tools.md               # DevEco 工具 + 测试 + 性能优化
-├── assets/                           # 资源文件（可选）
+├── LICENSE                           # MIT 开源协议
+├── .gitignore                        # Git 忽略配置
 └── README.md                         # 本文件
 ```
 
@@ -188,14 +189,15 @@ import { textToSpeech } from '@kit.CoreSpeechKit';
 
 ## References
 
-本 Skill 内容整理自以下官方文档：
+本 Skill 内容整理自以下优质文档（均为国内可访问链接）：
 
-- [华为开发者官网 - HarmonyOS 应用开发](https://developer.huawei.com/consumer/cn/docs/harmonyos-guides/arkts-ui-development-overview-0000001820999873)
-- [ArkUI 声明式开发框架](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-overview-0000001820999877)
-- [Stage 模型开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/stage-model-development-overview-0000001522197321)
-- [Core Vision Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-kit-0000001881306486)
-- [CameraKit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-overview-0000001111858670)
-- [DevEco Studio](https://developer.huawei.com/consumer/cn/doc/ide0000000003896273)
+- [初识 ArkTS 语言 - HarmonyOS Developer](https://developer.harmonyos.cool/docs/arkts/intro/)（HarmonyOS 开发者站 ArkTS 入门）
+- [ArkUI 框架实战指南 - 阿里云开发者社区](https://developer.aliyun.com/article/1631022)（2024-10-29，ArkUI 声明式开发详解）
+- [HarmonyOS ArkTS 应用入门实操 - 腾讯云](https://cloud.tencent.com/developer/article/2366971)（Stage 模型 + 第一个 ArkTS 应用）
+- [ArkTS 开发全场景应用 - 华为云社区](https://bbs.huaweicloud.com/blogs/438338)（2024-10-31，DevEco 环境搭建 + 完整语法 + 分布式特性）
+- [Core Vision Kit 骨骼点检测 - CSDN](https://harmonyosdev.csdn.net/6952a908bf6b0e4b285f4e11.html)（2025-12-30，骨架识别 + subjectSegmentation + 官方避坑指南）
+- [HarmonyOS 相机开发 - 腾讯云](https://cloud.tencent.com/developer/article/2340875)（CameraKit 相机模块 + 权限 + 拍照/预览完整流程）
+- [Core Vision Kit 示例代码 - Gitee](https://gitee.com/harmonyos_codelabs/core-vision-kit-codelab-ark-ts-image-segmentation-demo)（华为官方 Codelabs 仓库，图像主体分割示例）
 
 ---
 
