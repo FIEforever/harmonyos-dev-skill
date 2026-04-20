@@ -41,6 +41,7 @@
 | **多端部署** | 响应式布局断点、四种布局方案、自由流转、跨设备迁移 | 一套代码多设备运行 |
 | **NDK 开发** | C++ / N-API 桥接、CMake 构建、ArkTS 调用 | CPU 密集型计算必备 |
 | **DevEco 工具** | Profiler 分析模板、Testing 框架、性能优化全流程 | 开发效率翻倍 |
+| **uniapp 跨平台** | HBuilderX + Vue 3 + UTS 插件 + ArkUI 嵌入 | 一套代码多端运行（App+小程序+H5+鸿蒙）|
 
 ---
 
@@ -108,6 +109,24 @@ C:\Users\<YourName>\.trae-cn\skills\harmonyos-dev\
 
 ---
 
+## 两种开发方案对比
+
+| 对比项 | 原生 ArkTS 开发 | uniapp 跨平台开发 |
+|--------|----------------|-------------------|
+| **Skill 仓库** | [harmonyos-dev-skill](https://github.com/FIEforever/harmonyos-dev-skill) | [uniapp-harmony-skill](https://github.com/FIEforever/uniapp-harmony-skill) |
+| **代码复用** | 仅鸿蒙平台 | 一套代码多端运行 |
+| **性能** | 最佳性能 | 接近原生性能 |
+| **学习成本** | 需要学习 ArkTS | Vue 开发者友好 |
+| **原生能力** | 直接调用所有 API | 通过 UTS 插件调用 |
+| **适用场景** | 极致性能、高复杂度应用 | 多端应用（App+小程序+H5）|
+
+### 选择建议
+
+- **原生 ArkTS 开发**：适合追求极致性能、需要使用全部 HarmonyOS 能力（如 ArkUI 高级特性、NDK、GPU 渲染等）
+- **uniapp 跨平台开发**：适合已有 Vue 开发经验、需要同时支持 App、小程序、H5、鸿蒙等多端的应用
+
+---
+
 ## Key References
 
 ### ArkUI 组件速查
@@ -170,6 +189,7 @@ import { textToSpeech } from '@kit.CoreSpeechKit';
 
 | Version | Date | Highlights |
 |---------|------|-----------|
+| v2.3 | 2026-04-20 | 新增 uniapp 跨平台开发方案对比 |
 | v2.2 | 2026-04-20 | 全量扩充：媒体/AI/分布式/NDK/多端部署/工具链 |
 | v2.1 | 2026-04-19 | 新增图形系统（6大图形Kit） |
 | v2.0 | 2026-04-18 | Stage模型 + ArkTS完整规范 |
@@ -198,6 +218,16 @@ import { textToSpeech } from '@kit.CoreSpeechKit';
 - [Core Vision Kit 骨骼点检测 - CSDN](https://harmonyosdev.csdn.net/6952a908bf6b0e4b285f4e11.html)（2025-12-30，骨架识别 + subjectSegmentation + 官方避坑指南）
 - [HarmonyOS 相机开发 - 腾讯云](https://cloud.tencent.com/developer/article/2340875)（CameraKit 相机模块 + 权限 + 拍照/预览完整流程）
 - [Core Vision Kit 示例代码 - Gitee](https://gitee.com/harmonyos_codelabs/core-vision-kit-codelab-ark-ts-image-segmentation-demo)（华为官方 Codelabs 仓库，图像主体分割示例）
+
+### uniapp 鸿蒙开发参考
+
+- [uniapp-harmony-skill 仓库](https://github.com/FIEforever/uniapp-harmony-skill)（AI Agent 的 uniapp 鸿蒙开发专家技能库）
+- [uni-app 鸿蒙开发专题 - uni-app 官网](https://uniapp.dcloud.net.cn/tutorial/harmony/dev.html)
+- [运行和发行 - uni-app 官网](https://uniapp.dcloud.net.cn/tutorial/harmony/runbuild.html)
+- [调用鸿蒙原生API - uni-app 官网](https://uniapp.dcloud.net.cn/tutorial/harmony/native-api.html)
+- [嵌入鸿蒙原生组件 - uni-app 官网](https://uniapp.dcloud.net.cn/tutorial/harmony/native-component.html)
+- [HBuilderX 下载](https://www.dcloud.io/hbuilderx.html)
+- [DevEco Studio 下载](https://developer.huawei.com/consumer/cn/download/deveco-studio)
 
 ---
 
