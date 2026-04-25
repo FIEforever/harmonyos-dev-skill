@@ -109,21 +109,23 @@ C:\Users\<YourName>\.trae-cn\skills\harmonyos-dev\
 
 ---
 
-## 两种开发方案对比
+## 三种鸿蒙开发方案对比
 
-| 对比项 | 原生 ArkTS 开发 | uniapp 跨平台开发 |
-|--------|----------------|-------------------|
-| **Skill 仓库** | [harmonyos-dev-skill](https://github.com/FIEforever/harmonyos-dev-skill) | [uniapp-harmony-skill](https://github.com/FIEforever/uniapp-harmony-skill) |
-| **代码复用** | 仅鸿蒙平台 | 一套代码多端运行 |
-| **性能** | 最佳性能 | 接近原生性能 |
-| **学习成本** | 需要学习 ArkTS | Vue 开发者友好 |
-| **原生能力** | 直接调用所有 API | 通过 UTS 插件调用 |
-| **适用场景** | 极致性能、高复杂度应用 | 多端应用（App+小程序+H5）|
+| 对比项 | harmonyos-dev-skill（综合版）| harmonyos-native-skill（纯原生）| uniapp-harmony-skill（跨平台）|
+|--------|------------------------------|--------------------------------|-------------------------------|
+| **Skill 仓库** | [harmonyos-dev-skill](https://github.com/FIEforever/harmonyos-dev-skill) | [harmonyos-native-skill](https://github.com/FIEforever/harmonyos-native-skill) | [uniapp-harmony-skill](https://github.com/FIEforever/uniapp-harmony-skill) |
+| **覆盖范围** | 综合，含部分跨平台说明 | 纯 ArkTS + ArkUI 原生 | Vue 3 + HBuilderX 跨平台 |
+| **代码复用** | 仅鸿蒙平台 | 仅鸿蒙平台 | App + 小程序 + H5 + 鸿蒙 |
+| **性能** | 最佳 | 最佳 | 接近原生 |
+| **学习成本** | 需要学习 ArkTS | 需要学习 ArkTS | Vue 开发者友好 |
+| **原生 API** | 全量直接调用 | 全量直接调用 | 通过 UTS 插件 |
+| **适用场景** | 通用鸿蒙开发 | 极致性能、纯鸿蒙应用 | 多端应用快速开发 |
 
 ### 选择建议
 
-- **原生 ArkTS 开发**：适合追求极致性能、需要使用全部 HarmonyOS 能力（如 ArkUI 高级特性、NDK、GPU 渲染等）
-- **uniapp 跨平台开发**：适合已有 Vue 开发经验、需要同时支持 App、小程序、H5、鸿蒙等多端的应用
+- **harmonyos-dev-skill（本仓库）**：综合参考，覆盖面最广，适合日常鸿蒙开发
+- **[harmonyos-native-skill](https://github.com/FIEforever/harmonyos-native-skill)**：只包含纯 ArkTS 原生内容，不含跨平台，更聚焦、更精简
+- **[uniapp-harmony-skill](https://github.com/FIEforever/uniapp-harmony-skill)**：适合已有 Vue 经验、需同时支持多端的开发者
 
 ---
 
@@ -189,6 +191,7 @@ import { textToSpeech } from '@kit.CoreSpeechKit';
 
 | Version | Date | Highlights |
 |---------|------|-----------|
+| v2.4 | 2026-04-25 | 新增 harmonyos-native-skill（纯原生）对比说明 |
 | v2.3 | 2026-04-20 | 新增 uniapp 跨平台开发方案对比 |
 | v2.2 | 2026-04-20 | 全量扩充：媒体/AI/分布式/NDK/多端部署/工具链 |
 | v2.1 | 2026-04-19 | 新增图形系统（6大图形Kit） |
@@ -218,6 +221,10 @@ import { textToSpeech } from '@kit.CoreSpeechKit';
 - [Core Vision Kit 骨骼点检测 - CSDN](https://harmonyosdev.csdn.net/6952a908bf6b0e4b285f4e11.html)（2025-12-30，骨架识别 + subjectSegmentation + 官方避坑指南）
 - [HarmonyOS 相机开发 - 腾讯云](https://cloud.tencent.com/developer/article/2340875)（CameraKit 相机模块 + 权限 + 拍照/预览完整流程）
 - [Core Vision Kit 示例代码 - Gitee](https://gitee.com/harmonyos_codelabs/core-vision-kit-codelab-ark-ts-image-segmentation-demo)（华为官方 Codelabs 仓库，图像主体分割示例）
+
+### 纯原生开发参考
+
+- [harmonyos-native-skill 仓库](https://github.com/FIEforever/harmonyos-native-skill)（纯 ArkTS + ArkUI 原生开发，不含跨平台）
 
 ### uniapp 鸿蒙开发参考
 
